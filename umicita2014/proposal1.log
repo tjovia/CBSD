@@ -1,0 +1,14 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (MiKTeX 2.9) (preloaded format=pdftex 2013.1.29)  16 JUL 2013 14:54
+entering extended mode
+**C:/Users/Jovia/Dropbox/Achievement/Proposal/proposal1.bib
+(C:/Users/Jovia/Dropbox/Achievement/Proposal/proposal1.bib
+! Undefined control sequence.
+l.1 \bibliography
+                 {proposal1}
+? 
+! Emergency stop.
+l.1 \bibliography
+                 {proposal1}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

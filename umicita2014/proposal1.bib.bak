@@ -1,0 +1,680 @@
+\bibliography{proposal1}
+% This file was created with JabRef 2.6.
+% Encoding: Cp1252
+
+@article{nassar2007cassava,
+  title={Cassava improvement: challenges and impacts},
+  author={Nassar, NMA and Ortiz, R},
+  journal={The Journal of Agricultural Science},
+  volume={145},
+  number={2},
+  pages={163-171},
+  year={2007},
+  publisher={Cambridge Univ Press}
+}
+
+@article{chavez2005variation,
+  title={Variation of quality traits in cassava roots evaluated in landraces and improved clones},
+  author={Ch{\'a}vez, Alba Luc{\'\i}a and S{\'a}nchez, Teresa and Jaramillo, Gustavo and Bedoya, JMl and Echeverry, J and Bola{\~n}os, EA and Ceballos, Hern{\'a}n and Iglesias, Carlos Ariel},
+  journal={Euphytica},
+  volume={143},
+  number={1-2},
+  pages={125--133},
+  year={2005},
+  publisher={Springer}
+}
+
+@article{kawano2003thirty,
+  title={Thirty years of cassava breeding for productivity: biological and social factors for success},
+  author={Kawano, Kazuo},
+  journal={Crop Science},
+  volume={43},
+  number={4},
+  pages={1325--1335},
+  year={2003},
+  publisher={Crop Science Society of America}
+}
+
+@article{ntawuruhunga2007new,
+  title={New spread of Cassava Brown Streak Virus Disease and its implications for the movement of cassava germplasm in the east and central African region},
+  author={Ntawuruhunga, Pheneas and Legg, James},
+  journal={USAID, Crop Crisis Control Project C3P},
+  year={2007}
+}
+
+@article{hillocks2003cassava,
+  title={Cassava brown streak disease: a review of present knowledge and research needs},
+  author={Hillocks, RJ and Jennings, DL},
+  journal={International Journal of Pest Management},
+  volume={49},
+  number={3},
+  pages={225--234},
+  year={2003},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{quinn2011modeling,
+  title={Modeling and Monitoring Crop Disease in Developing Countries.},
+  author={Quinn, John Alexander and Leyton-Brown, Kevin and Mwebaze, Ernest},
+  booktitle={AAAI},
+  year={2011}
+}
+
+@article{van2003modelling,
+  title={Modelling plant disease epidemics},
+  author={Van Maanen, A and Xu, X-M},
+  journal={European Journal of Plant Pathology},
+  volume={109},
+  number={7},
+  pages={669--682},
+  year={2003},
+  publisher={Springer}
+}
+
+@article{nelson1999applications,
+  title={Applications of geographic information systems and geostatistics in plant disease epidemiology and management},
+  author={Nelson, Merritt R and Orum, Thomas V and Jaime-Garcia, Ramon and Nadeem, Athar},
+  journal={Plant Disease},
+  volume={83},
+  number={4},
+  pages={308--319},
+  year={1999},
+  publisher={Am Phytopath Society}
+}
+
+@inproceedings{chu2005gaussian,
+  title={Gaussian processes for ordinal regression},
+  author={Chu, Wei and Ghahramani, Zoubin},
+  booktitle={Journal of Machine Learning Research},
+  pages={1019--1041},
+  year={2005}
+}
+
+@book{quinlan1993c4,
+  title={C4. 5: programs for machine learning},
+  author={Quinlan, John Ross},
+  volume={1},
+  year={1993},
+  publisher={Morgan kaufmann}
+}
+
+@MISC{cass,
+  author = {Biosciences for Farming in Africa},
+  title = {Cassava},
+  month = {june},
+  year = {2013},
+  url = {http://www.b4fa.org/biosciences-and-agriculture/cassava/}
+}
+
+@article{bravo2003early,
+  title={Early disease detection in wheat fields using spectral reflectance},
+  author={Bravo, Cedric and Moshou, Dimitrios and West, Jonathan and McCartney, Alastair and Ramon, Herman},
+  journal={Biosystems Engineering},
+  volume={84},
+  number={2},
+  pages={137--145},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@article{rumpf2010early,
+  title={Early detection and classification of plant diseases with Support Vector Machines based on hyperspectral reflectance},
+  author={Rumpf, T and Mahlein, A-K and Steiner, U and Oerke, E-C and Dehne, H-W and Pl{\"u}mer, L},
+  journal={Computers and Electronics in Agriculture},
+  volume={74},
+  number={1},
+  pages={91--99},
+  year={2010},
+  publisher={Elsevier}
+}
+
+@article{camargo2009image,
+  title={Image pattern classification for the identification of disease causing agents in plants},
+  author={Camargo, A and Smith, JS},
+  journal={Computers and Electronics in Agriculture},
+  volume={66},
+  number={2},
+  pages={121--125},
+  year={2009},
+  publisher={Elsevier}
+}
+
+@article{Smith2009image,
+  title={An image-processing based algorithm to automatically identify plant disease visual symptoms},
+  author={Smith, JS and Camargo, A},
+  journal={Biosystems Engineering},
+  volume={102},
+  number={1},
+  pages={9--21},
+  year={2009},
+  publisher={Elsevier}
+  }
+
+@article{orchard1991color,
+  title={Color quantization of images},
+  author={Orchard, Michael T and Bouman, Charles A},
+  journal={Signal Processing, IEEE Transactions on},
+  volume={39},
+  number={12},
+  pages={2677--2690},
+  year={1991},
+  publisher={IEEE}
+}
+
+@inproceedings{comaniciu1997robust,
+  title={Robust analysis of feature spaces: color image segmentation},
+  author={Comaniciu, Dorin and Meer, Peter},
+  booktitle={Computer Vision and Pattern Recognition, 1997. Proceedings., 1997 IEEE Computer Society Conference on},
+  pages={750--755},
+  year={1997},
+  organization={IEEE}
+}
+
+@article{hoy1997use,
+  title={On the use of color imaging in experimental applications},
+  author={Hoy, Darrell EP},
+  journal={Experimental Techniques},
+  volume={21},
+  number={4},
+  pages={17--19},
+  year={1997},
+  publisher={Wiley Online Library}
+}
+
+@inproceedings{chapron1992new,
+  title={A new chromatic edge detector used for color image segmentation},
+  author={Chapron, Michel},
+  booktitle={Pattern Recognition, 1992. Vol. III. Conference C: Image, Speech and Signal Analysis, Proceedings., 11th IAPR International Conference on},
+  pages={311--314},
+  year={1992},
+  organization={IEEE}
+}
+
+@inproceedings{pietikainen1996accurate,
+  title={Accurate color discrimination with classification based on feature distributions},
+  author={Pietikainen, Matti and Nieminen, Sami and Marszalec, Elzbieta and Ojala, Timo},
+  booktitle={Pattern Recognition, 1996., Proceedings of the 13th International Conference on},
+  volume={3},
+  pages={833--838},
+  year={1996},
+  organization={IEEE}
+}
+
+@article{littmann1997adaptive,
+  title={Adaptive color segmentation-a comparison of neural and statistical methods},
+  author={Littmann, Enno and Ritter, Helge},
+  journal={Neural Networks, IEEE Transactions on},
+  volume={8},
+  number={1},
+  pages={175--185},
+  year={1997},
+  publisher={IEEE}
+}
+
+@inproceedings{kim1996color,
+  title={Color image palette construction based on the HSI color system for minimizing the reconstruction error},
+  author={Kim, Won-Soon and Park, Rae-Hong},
+  booktitle={Image Processing, 1996. Proceedings., International Conference on},
+  volume={3},
+  pages={1041--1044},
+  year={1996},
+  organization={IEEE}
+}
+
+
+@inproceedings{tsang1996edge,
+  title={Edge detection on object color},
+  author={Tsang, Peter Wai-Ming and Tsang, WH},
+  booktitle={Image Processing, 1996. Proceedings., International Conference on},
+  volume={3},
+  pages={1049--1052},
+  year={1996},
+  organization={IEEE}
+}
+
+@article{cheng2001color,
+  title={Color image segmentation: advances and prospects},
+  author={Cheng, Heng-Da and Jiang, XH and Sun, Ying and Wang, Jingli},
+  journal={Pattern recognition},
+  volume={34},
+  number={12},
+  pages={2259--2281},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@inproceedings{tseng1992color,
+  title={Color segmentation using perceptual attributes},
+  author={Tseng, D-C and Chang, C-H},
+  booktitle={Pattern Recognition, 1992. Vol. III. Conference C: Image, Speech and Signal Analysis, Proceedings., 11th IAPR International Conference on},
+  pages={228--231},
+  year={1992},
+  organization={IEEE}
+}
+
+@article{sowmya2009colour,
+  title={Colour image segmentation using soft computing techniques},
+  author={Sowmya, B and Sheelarani, B},
+  journal={International Journal of Soft Computing Applications},
+  volume={4},
+  pages={69--80},
+  year={2009}
+}
+
+@article{seenivasagam2012survey,
+  title={A Survey of Image Segmentation Methods using Conventional and Soft Computing Techniques for Color Images},
+  author={Seenivasagam, V and Arumugadevi, S},
+  journal={International Journal of Advanced Research in Computer Science and Electronics Engineering (IJARCSEE)},
+  volume={1},
+  number={6},
+  pages={pp--116},
+  year={2012}
+}
+
+
+@article{byvatov2003comparison,
+  title={Comparison of support vector machine and artificial neural network systems for drug/nondrug classification},
+  author={Byvatov, Evgeny and Fechner, Uli and Sadowski, Jens and Schneider, Gisbert},
+  journal={Journal of Chemical Information and Computer Sciences},
+  volume={43},
+  number={6},
+  pages={1882--1889},
+  year={2003},
+  publisher={ACS Publications}
+}
+
+
+@article{chapelle1999support,
+  title={Support vector machines for histogram-based image classification},
+  author={Chapelle, Olivier and Haffner, Patrick and Vapnik, Vladimir N},
+  journal={Neural Networks, IEEE Transactions on},
+  volume={10},
+  number={5},
+  pages={1055--1064},
+  year={1999},
+  publisher={IEEE}
+}
+
+@article{vapnik1998statistical,
+  title={Statistical learning theory},
+  author={Vapnik, Vladimir N},
+  year={1998},
+  publisher={Wiley}
+}
+@article{bartlett1999generalization,
+  title={Generalization performance of support vector machines and other pattern classifiers},
+  author={Bartlett, Peter and Shawe-Taylor, John},
+  journal={Advances in kernel methods: support vector learning},
+  pages={43--54},
+  year={1999},
+  publisher={MIT Press, Cambridge, USA}
+}
+
+@article{friedman1997bayesian,
+  title={Bayesian network classifiers},
+  author={Friedman, Nir and Geiger, Dan and Goldszmidt, Moises},
+  journal={Machine learning},
+  volume={29},
+  number={2-3},
+  pages={131--163},
+  year={1997},
+  publisher={Springer}
+}
+
+@article{farid2013hybrid,
+  title={Hybrid decision tree and na{\"\i}ve Bayes classifiers for multi-class classification tasks},
+  author={Farid, Dewan Md and Zhang, Li and Rahman, Chowdhury Mofizur and Hossain, MA and Strachan, Rebecca},
+  journal={Expert Systems with Applications},
+  year={2013},
+  publisher={Elsevier}
+}
+
+@article{chandra2011robust,
+  title={Robust approach for estimating probabilities in Na{\"\i}ve--Bayes Classifier for gene expression data},
+  author={Chandra, B and Gupta, Manish},
+  journal={Expert Systems with Applications},
+  volume={38},
+  number={3},
+  pages={1293--1298},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@article{franco2001estimation,
+  title={Estimation and mapping of forest stand density, volume, and cover type using the< i> k</i>-nearest neighbors method},
+  author={Franco-Lopez, Hector and Ek, Alan R and Bauer, Marvin E},
+  journal={Remote sensing of Environment},
+  volume={77},
+  number={3},
+  pages={251--274},
+  year={2001},
+  publisher={Elsevier}
+}
+
+@article{henley1996k,
+  title={A k-nearest-neighbour classifier for assessing consumer credit risk},
+  author={Henley, WE and Hand, David J},
+  journal={The Statistician},
+  pages={77--95},
+  year={1996},
+  publisher={JSTOR}
+}
+
+@inproceedings{tomppo1997application,
+  title={Application of remote sensing in Finnish national forest inventory},
+  author={Tomppo, E},
+  booktitle={Application of Remote Sensing in European Forest Monitoring. International Workshop, Vienna, Austria, 14th 16th October 1996. Proceedings European Commission},
+  pages={375--388},
+  year={1997}
+}
+
+@article{kandrika2008land,
+  title={Land use land cover classification of Orissa using multi-temporal IRS-P6 awifs data: A decision tree approach},
+  author={Kandrika, Sreenivas and Roy, Partha Sarathi},
+  journal={International Journal of Applied Earth Observation and Geoinformation},
+  volume={10},
+  number={2},
+  pages={186--193},
+  year={2008},
+  publisher={Elsevier}
+}
+
+@article{pal2003assessment,
+  title={An assessment of the effectiveness of decision tree methods for land cover classification},
+  author={Pal, Mahesh and Mather, Paul M},
+  journal={Remote sensing of environment},
+  volume={86},
+  number={4},
+  pages={554--565},
+  year={2003},
+  publisher={Elsevier}
+}
+
+@article{punia2011decision,
+  title={Decision tree classification of land use land cover for Delhi, India using IRS-P6 AWiFS data},
+  author={Punia, Milap and Joshi, PK and Porwal, MC},
+  journal={Expert Systems with Applications},
+  volume={38},
+  number={5},
+  pages={5577--5583},
+  year={2011},
+  publisher={Elsevier}
+}
+
+@misc{bazaraa1979nonlinear,
+  title={Nonlinear programming theory and methods},
+  author={Bazaraa, Mokhttar S and Sherali, Hanif D and Shetty, CM},
+  year={1979},
+  publisher={New York: Wiley}
+}
+
+@article{rasmussen2006gaussian,
+  title={Gaussian processes for machine learning. 2006},
+  author={Rasmussen, Carl Edward and Williams, CKI},
+  journal={The MIT Press, Cambridge, MA, USA},
+  volume={38},
+  pages={715--719},
+  year={2006}
+}
+
+@article{Mahlein201321,
+title = "Development of spectral indices for detecting and identifying plant diseases ",
+journal = "Remote Sensing of Environment ",
+volume = "128",
+number = "0",
+pages = "21 - 30",
+year = "2013",
+note = "",
+issn = "0034-4257",
+doi = "http://dx.doi.org/10.1016/j.rse.2012.09.019",
+url = "http://www.sciencedirect.com/science/article/pii/S0034425712003793",
+author = "A.-K. Mahlein and T. Rumpf and P. Welke and H.-W. Dehne and L. Plümer and U. Steiner and E.-C. Oerke",
+keywords = "Spectral disease indices",
+keywords = "Hyperspectral reflectance",
+keywords = "Band selection",
+keywords = "Sugar beet",
+keywords = "Plant diseases",
+keywords = "Precision crop protection",
+keywords = "<span style='font-style: italic'>Cercospora</span> leaf spot",
+keywords = "Powdery mildew",
+keywords = "Sugar beet rust "
+}
+
+@article{Li201232,
+title = "Spectral difference analysis and airborne imaging classification for citrus greening infected trees ",
+journal = "Computers and Electronics in Agriculture ",
+volume = "83",
+number = "0",
+pages = "32 - 46",
+year = "2012",
+note = "",
+issn = "0168-1699",
+doi = "http://dx.doi.org/10.1016/j.compag.2012.01.010",
+url = "http://www.sciencedirect.com/science/article/pii/S0168169912000233",
+author = "Xiuhua Li and Won Suk Lee and Minzan Li and Reza Ehsani and Ashish Ratn Mishra and Chenghai Yang and Robert L. Mangan",
+keywords = "Airborne imaging",
+keywords = "Citrus greening",
+keywords = "Disease detection",
+keywords = "Image classification",
+keywords = "Spectral analysis "
+}
+
+@article{Yu201365,
+title = "Automatic image-based detection technology for two critical growth stages of maize: Emergence and three-leaf stage ",
+journal = "Agricultural and Forest Meteorology ",
+volume = "174–175",
+number = "0",
+pages = "65 - 84",
+year = "2013",
+note = "",
+issn = "0168-1923",
+doi = "http://dx.doi.org/10.1016/j.agrformet.2013.02.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0168192313000397",
+author = "Zhenghong Yu and Zhiguo Cao and Xi Wu and Xiaodong Bai and Yueming Qin and Wen Zhuo and Yang Xiao and Xuefen Zhang and Hongxi Xue",
+keywords = "Maize",
+keywords = "Growth stage",
+keywords = "Automatic detection technology",
+keywords = "Computer vision",
+keywords = "Emergence stage",
+keywords = "Three-leaf stage "
+}
+
+@article{Camargo20121,
+title = "Intelligent systems for the assessment of crop disorders ",
+journal = "Computers and Electronics in Agriculture ",
+volume = "85",
+number = "0",
+pages = "1 - 7",
+year = "2012",
+note = "",
+issn = "0168-1699",
+doi = "http://dx.doi.org/10.1016/j.compag.2012.02.017",
+url = "http://www.sciencedirect.com/science/article/pii/S0168169912000579",
+author = "Anyela Camargo and Juan P. Molina and Jorge Cadena-Torres and Nora Jimenez and Jan T. Kim",
+keywords = "Crop disorder diagnosis",
+keywords = "Machine learning",
+keywords = "Information systems",
+keywords = "Food security "
+}
+
+
+@article{Yu201365,
+title = "Automatic image-based detection technology for two critical growth stages of maize: Emergence and three-leaf stage ",
+journal = "Agricultural and Forest Meteorology ",
+volume = "174–175",
+number = "0",
+pages = "65 - 84",
+year = "2013",
+note = "",
+issn = "0168-1923",
+doi = "http://dx.doi.org/10.1016/j.agrformet.2013.02.011",
+url = "http://www.sciencedirect.com/science/article/pii/S0168192313000397",
+author = "Zhenghong Yu and Zhiguo Cao and Xi Wu and Xiaodong Bai and Yueming Qin and Wen Zhuo and Yang Xiao and Xuefen Zhang and Hongxi Xue",
+keywords = "Maize",
+keywords = "Growth stage",
+keywords = "Automatic detection technology",
+keywords = "Computer vision",
+keywords = "Emergence stage",
+keywords = "Three-leaf stage "
+}
+
+@article{vurro2010emerging,
+  title={Emerging infectious diseases of crop plants in developing countries: impact on agriculture and socio-economic consequences},
+  author={Vurro, Maurizio and Bonciani, Barbara and Vannacci, Giovanni},
+  journal={Food Security},
+  volume={2},
+  number={2},
+  pages={113--132},
+  year={2010},
+  publisher={Springer}
+}
+
+@article{spacecolor,
+  title={Color Spaces},
+  author={Space, RGB Color}
+}
+
+
+@inproceedings{meunkaewjinda2008grape,
+  title={Grape leaf disease detection from color imagery using hybrid intelligent system},
+  author={Meunkaewjinda, A and Kumsawat, P and Attakitmongcol, K and Srikaew, A},
+  booktitle={Electrical Engineering/Electronics, Computer, Telecommunications and Information Technology, 2008. ECTI-CON 2008. 5th International Conference on},
+  volume={1},
+  pages={513--516},
+  year={2008},
+  organization={IEEE}
+}
+
+@article{ford1998colour,
+  title={Colour space conversions},
+  author={Ford, Adrian and Roberts, Alan},
+  journal={Westminster University, London},
+  volume={1998},
+  pages={1--31},
+  year={1998}
+}
+
+@article{fix1989discriminatory,
+  title={Discriminatory analysis. Nonparametric discrimination: Consistency properties},
+  author={Fix, Evelyn and Hodges, Joseph Lawson},
+  journal={International Statistical Review/Revue Internationale de Statistique},
+  volume={57},
+  number={3},
+  pages={238--247},
+  year={1989},
+  publisher={JSTOR}
+}
+
+@article{dudani1976distance,
+  title={The distance-weighted k-nearest-neighbor rule},
+  author={Dudani, Sahibsingh A},
+  journal={Systems, Man and Cybernetics, IEEE Transactions on},
+  number={4},
+  pages={325--327},
+  year={1976},
+  publisher={IEEE}
+}
+
+@article{anyanwu2009comparative,
+  title={Comparative analysis of serial decision tree classification algorithms},
+  author={Anyanwu, Matthew N and Shiva, Sajjan G},
+  journal={International Journal of Computer Science and Security},
+  volume={3},
+  number={3},
+  pages={230--240},
+  year={2009},
+  publisher={Citeseer}
+}
+
+@article{quinlan1986induction,
+  title={Induction of decision trees},
+  author={Quinlan, J. Ross},
+  journal={Machine learning},
+  volume={1},
+  number={1},
+  pages={81--106},
+  year={1986},
+  publisher={Springer}
+}
+
+@book{han2006data,
+  title={Data mining: concepts and techniques},
+  author={Han, Jiawei and Kamber, Micheline and Pei, Jian},
+  year={2006},
+  publisher={Morgan kaufmann}
+}
+
+
+@article{shao1993linear,
+  title={Linear model selection by cross-validation},
+  author={Shao, Jun},
+  journal={Journal of the American statistical Association},
+  volume={88},
+  number={422},
+  pages={486--494},
+  year={1993},
+  publisher={Taylor \& Francis}
+}
+
+@inproceedings{kohavi1995study,
+  title={A study of cross-validation and bootstrap for accuracy estimation and model selection},
+  author={Kohavi, Ron and others},
+  booktitle={IJCAI},
+  volume={14},
+  number={2},
+  pages={1137--1145},
+  year={1995}
+}
+
+@article{fawcett2006introduction,
+  title={An introduction to ROC analysis},
+  author={Fawcett, Tom},
+  journal={Pattern recognition letters},
+  volume={27},
+  number={8},
+  pages={861--874},
+  year={2006},
+  publisher={Elsevier}
+}
+
+@incollection{sokolova2006beyond,
+  title={Beyond accuracy, F-score and ROC: a family of discriminant measures for performance evaluation},
+  author={Sokolova, Marina and Japkowicz, Nathalie and Szpakowicz, Stan},
+  booktitle={AI 2006: Advances in Artificial Intelligence},
+  pages={1015--1021},
+  year={2006},
+  publisher={Springer}
+}
+
+
+@article{galvan2014evaluation,
+  title={Evaluation of Four Classifiers as Cost Function for Indoor Location Systems},
+  author={Galv{\'a}n-Tejada, Carlos E and Garc{\'\i}a-V{\'a}zquez, Juan P and Garc{\'\i}a-Ceja, Enrique and Carrasco-Jim{\'e}nez, Jos{\'e} C and Brena, Ram{\'o}n F},
+  journal={Procedia Computer Science},
+  volume={32},
+  pages={453--460},
+  year={2014},
+  publisher={Elsevier}
+}
+
+
+@article{breiman2001random,
+  title={Random forests},
+  author={Breiman, Leo},
+  journal={Machine learning},
+  volume={45},
+  number={1},
+  pages={5--32},
+  year={2001},
+  publisher={Springer}
+}
+
+@article{kohavi1998glossary,
+  title={Glossary of terms},
+  author={Kohavi, Ron and Provost, Foster},
+  journal={Machine Learning},
+  volume={30},
+  number={2-3},
+  pages={271--274},
+  year={1998}
+}
