@@ -21,20 +21,20 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
-\bibitem{nassar2007cassava}
-N.~Nassar and R.~Ortiz, ``Cassava improvement: challenges and impacts,''
-  \emph{The Journal of Agricultural Science}, vol. 145, no.~2, pp. 163--171,
-  2007.
-
 \bibitem{chavez2005variation}
 A.~L. Ch{\'a}vez, T.~S{\'a}nchez, G.~Jaramillo, J.~Bedoya, J.~Echeverry,
   E.~Bola{\~n}os, H.~Ceballos, and C.~A. Iglesias, ``Variation of quality
   traits in cassava roots evaluated in landraces and improved clones,''
   \emph{Euphytica}, vol. 143, no. 1-2, pp. 125--133, 2005.
 
+\bibitem{nassar2007cassava}
+N.~Nassar and R.~Ortiz, ``Cassava improvement: challenges and impacts,''
+  \emph{The Journal of Agricultural Science}, vol. 145, no.~2, pp. 163--171,
+  2007.
+
 \bibitem{cass}
 \BIBentryALTinterwordspacing
-B.~for Farming~in Africa, ``Cassava,'' june 2013. [Online]. Available:
+B.~for Farming~in Africa, ``Cassava,'' June 2013. [Online]. Available:
   \url{http://www.b4fa.org/biosciences-and-agriculture/cassava/}
 \BIBentrySTDinterwordspacing
 
@@ -70,8 +70,47 @@ A.~Camargo and J.~Smith, ``Image pattern classification for the identification
   of disease causing agents in plants,'' \emph{Computers and Electronics in
   Agriculture}, vol.~66, no.~2, pp. 121--125, 2009.
 
+\bibitem{kohavi1995study}
+R.~Kohavi \emph{et~al.}, ``A study of cross-validation and bootstrap for
+  accuracy estimation and model selection,'' in \emph{IJCAI}, vol.~14, no.~2,
+  1995, pp. 1137--1145.
+
+\bibitem{han2006data}
+J.~Han, M.~Kamber, and J.~Pei, \emph{Data mining: concepts and
+  techniques}.\hskip 1em plus 0.5em minus 0.4em\relax Morgan kaufmann, 2006.
+
+\bibitem{anyanwu2009comparative}
+M.~N. Anyanwu and S.~G. Shiva, ``Comparative analysis of serial decision tree
+  classification algorithms,'' \emph{International Journal of Computer Science
+  and Security}, vol.~3, no.~3, pp. 230--240, 2009.
+
+\bibitem{quinlan1986induction}
+J.~R. Quinlan, ``Induction of decision trees,'' \emph{Machine learning},
+  vol.~1, no.~1, pp. 81--106, 1986.
+
+\bibitem{breiman2001random}
+L.~Breiman, ``Random forests,'' \emph{Machine learning}, vol.~45, no.~1, pp.
+  5--32, 2001.
+
+\bibitem{liaw2002classification}
+A.~Liaw and M.~Wiener, ``Classification and regression by randomforest,''
+  \emph{R news}, vol.~2, no.~3, pp. 18--22, 2002.
+
+\bibitem{farid2013hybrid}
+D.~M. Farid, L.~Zhang, C.~M. Rahman, M.~Hossain, and R.~Strachan, ``Hybrid
+  decision tree and na{\"\i}ve bayes classifiers for multi-class classification
+  tasks,'' \emph{Expert Systems with Applications}, 2013.
+
+\bibitem{vapnik1998statistical}
+V.~N. Vapnik, ``Statistical learning theory,'' 1998.
+
+\bibitem{bartlett1999generalization}
+P.~Bartlett and J.~Shawe-Taylor, ``Generalization performance of support vector
+  machines and other pattern classifiers,'' \emph{Advances in kernel methods:
+  support vector learning}, pp. 43--54, 1999.
+
 \bibitem{fawcett2006introduction}
-T.~Fawcett, ``An introduction to roc analysis,'' \emph{Pattern recognition
+T.~Fawcett, ``An introduction to {ROC} analysis,'' \emph{Pattern recognition
   letters}, vol.~27, no.~8, pp. 861--874, 2006.
 
 \bibitem{sokolova2006beyond}

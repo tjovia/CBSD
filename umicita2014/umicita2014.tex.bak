@@ -620,6 +620,8 @@ The $R^{2}$ score, the coefficient of determination was calculated and this prov
 
 \begin{equation}\label{eqn9}
     R^2(y, \hat{y}) = 1 - \frac{\sum_{i=1}^{N} (y_{i} - \hat{y}_{i})^{2}}{\sum_{i=1}^N (y_{i} - \bar{y})^{2}}
+
+
 \end{equation}
 
 \noindent where $\bar{y} =  \frac{1}{N} \sum_{i=1}^{N} y_{i}$.

@@ -101,7 +101,7 @@
 @MISC{cass,
   author = {Biosciences for Farming in Africa},
   title = {Cassava},
-  month = {june},
+  month = {June},
   year = {2013},
   url = {http://www.b4fa.org/biosciences-and-agriculture/cassava/}
 }
@@ -677,4 +677,13 @@ keywords = "Three-leaf stage "
   number={2-3},
   pages={271--274},
   year={1998}
+}
+@article{liaw2002classification,
+  title={Classification and Regression by randomForest},
+  author={Liaw, Andy and Wiener, Matthew},
+  journal={R news},
+  volume={2},
+  number={3},
+  pages={18--22},
+  year={2002}
 }
