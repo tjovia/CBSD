@@ -1,0 +1,56 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+
+
+
+Nearest_Neighbors = [0.257564575646,0.301486199575,0.169421487603,0.120771958538,0.148423256128,0.18180960468,0.0922199235158,0.299725931541,0.333291551767,0.369189653527,0.363762936836,0.234502974394,0.312777605619,0.255021743632,0.233625084159,0.270245469144,0.126582278481,0.169614861267,0.146999559222,0.149648546354]
+Linear_SVM = [0.242988929889,0.289301209268,0.170196280992,0.108974358974,0.160375447363,0.197377111048,0.0867657200176,0.287072132486,0.294434695412,0.321609239286,0.346591172785,0.221441503578,0.292221877905,0.235659556844,0.218716937578,0.252466161964,0.122596597409,0.158551736378,0.156444808261,0.161627084806]
+Decision_Tree= [0.248339483395,0.278962429613,0.145015495868,0.0902891434806,0.109730569248,0.1653929616,0.0776126888596,0.30958073357,0.326836299825,0.339457860074,0.358518587274,0.225752220019,0.302448094205,0.242389728722,0.210349139175,0.265542555632,0.112263350186,0.126427261433,0.126440400479,0.142910618475]
+Naive_Bayes = [0.262915129151,0.312378842426,0.191761363636,0.091516639389,0.139307178067,0.199641475611,0.0935364553946,0.299900868855,0.384870894961,0.426314784767,0.395693135935,0.220234502974,0.341700237579,0.256781942431,0.236125805521,0.282748336774,0.146990441746,0.157072708987,0.156822618223,0.156552842823]
+Random_Forest = [0.236715867159,0.282654850918,0.138171487603,0.0692171303873,0.105341346478,0.160015095764,0.0669550498401,0.266662779171,0.300263223866,0.357067862938,0.348911681441,0.20924217605,0.290982336535,0.233692275834,0.213426950082,0.250630878642,0.0979813263461,0.127669644442,0.119293495372,0.127022418167]
+Actual = [0.323372071574,0.254568949603,0.175468043899,0.0261166041596,0.085685347738,0.179811320755,0.136785356068,0.204139941691,0.565457166134,0.451968503937,0.410943010952,0.253416095521,0.375335674447,0.220312661766,0.181669551837,0.247849524028,0.0888257435973,0.112103644108,0.133362717627,0.184287140243]
+
+surveyor_score1 = [4,4,2,2,2,2,2,4,5,4,4,4,5,3,3,3,2,2,3,3]
+surveyor_score2 = [4,4,2,2,2,3,2,4,5,5,5,3,5,4,4,4,2,2,3,3]
+
+# make the scatter plot
+suv1 = plt.scatter(Nearest_Neighbors,surveyor_score1,  s=80, alpha=1.0, marker='o')
+suv2 = plt.scatter(Nearest_Neighbors,surveyor_score2,  s=50, alpha=0.8, marker='*',color='r')
+
+# determine best fit line
+par = np.polyfit(Nearest_Neighbors, surveyor_score1, 1, full=True)
+
+slope=par[0][0]
+intercept=par[0][1]
+xl = [min(Nearest_Neighbors), max(Nearest_Neighbors)]
+yl = [slope*xx + intercept  for xx in xl]
+
+# coefficient of determination, plot text
+variance = np.var(surveyor_score1)
+residuals = np.var([(slope*xx + intercept - yy)  for xx,yy in zip(Nearest_Neighbors,Nearest_Neighbors)])
+Rsqr = np.round(1-residuals/variance, decimals=2)
+plt.text(.9*max(Nearest_Neighbors)+.1*min(Nearest_Neighbors),.9*max(surveyor_score1)+.1*min(surveyor_score1),'$R^2 = %0.2f$'% Rsqr, fontsize=20)
+
+
+plt.xlabel("Predicted % of Necrosis")
+plt.ylabel("surveyors Score")
+
+# error bounds
+yerr = [abs(slope*xx + intercept - yy)  for xx,yy in zip(Nearest_Neighbors,surveyor_score1)]
+par = np.polyfit(Nearest_Neighbors, yerr, 2, full=True)
+
+yerrUpper = [(xx*slope+intercept)+(par[0][0]*xx**2 + par[0][1]*xx + par[0][2]) for xx,yy in zip(Nearest_Neighbors,surveyor_score1)]
+yerrLower = [(xx*slope+intercept)-(par[0][0]*xx**2 + par[0][1]*xx + par[0][2]) for xx,yy in zip(Nearest_Neighbors,surveyor_score1)]
+
+
+plt.legend((suv1, suv2),
+           ('surveyor score1' , 'surveyor score2'),
+           scatterpoints=1,
+           loc='best',
+           ncol=2,
+           )
+plt.title('Linear Least Squares Fitting Graph')
+
+plt.plot(xl, yl, '-r')
+plt.show()

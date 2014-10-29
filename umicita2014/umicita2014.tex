@@ -469,14 +469,6 @@ Expert annotation was a process where an expert visually assigned a score of sev
 To assess operator variability, by comparing two sets of predictions of two different surveyors, a confusion matrix was used to determine how these predictions differed. The results are shown in Figure \ref{fig:CONM} and Table \ref{tbl:CM}:
 
 
-
-\begin{figure}[t!]
-\centering
-\includegraphics[scale=0.2]{images/confusionmatrix.jpg}
-\caption{Surveyor Score comparison for the two surveyors }
-\label{fig:CONM}
-\end{figure}
-
 \begin{table}[t!]
 \renewcommand{\arraystretch}{1.3}
 \caption{Surveyor Score confusion matrix }
@@ -537,10 +529,21 @@ A threshold was applied separately to each cropped root image so as to obtain it
 Image pixel data was extracted from the original image and its corresponding binary image. From the original image, the $RGB$ pixel data with the corresponding location coordinates,$(i,j)$ were extracted.
 
 \subsubsection{Classifier Training}
-In the classification, the method used for splitting data set into training and testing was the k-fold cross-validation sometimes called rotation estimation, the data set was randomly split into mutually exclusive subsets of approximately equal size\cite{kohavi1995study}. The classifiers used were; Nearest Neighbors\cite{han2006data}, Decision tree\cite{anyanwu2009comparative}\cite{quinlan1986induction}, Random Forest \cite{breiman2001random}\cite{liaw2002classification}, Naive Bayes \cite{farid2013hybrid} and Support Vector Machine (Linear SVM)\cite{vapnik1998statistical}\cite{bartlett1999generalization}. To evaluate classifier performance, four performance measures were implemented, i.e., Receiver Operating Characteristic (ROC), AUC and predictive accuracy score, which evaluated how good the classifiers performed when distinguishing necrotised pixels from healthy pixels. MAE and $R^{2}$ score, the coefficient of determination evaluated how good the classifiers performed in the overall prediction of the percentage of necrotisation in the root. The data and source code are available at https://github.com/tjovia/CBSD.git
+In the classification, the method used for splitting data set into training and testing was the k-fold cross-validation sometimes called rotation estimation, the data set was randomly split into mutually exclusive subsets of approximately equal size\cite{kohavi1995study}. The classifiers used were; Nearest Neighbors\cite{han2006data}, Decision tree\cite{anyanwu2009comparative}\cite{quinlan1986induction}, Random Forest \cite{breiman2001random}\cite{liaw2002classification}, Naive Bayes \cite{farid2013hybrid} and Support Vector Machine (Linear SVM)\cite{vapnik1998statistical}\cite{bartlett1999generalization}. \\ \\To evaluate classifier performance, four performance measures were implemented, i.e., Receiver Operating Characteristic (ROC), AUC and predictive accuracy score, which evaluated how good the classifiers performed when distinguishing necrotised pixels from healthy pixels. MAE and $R^{2}$ score, the coefficient of determination evaluated how good the classifiers performed in the overall prediction of the percentage of necrotisation in the root. The data and source code are available at https://github.com/tjovia/CBSD.git
+
+
 \subsection{Results}
-\subsubsection{Receiver Operating Characteristics}
-To choose the best performing classifier, results of AUC and accuracy were obtained. In this section the results for both methods will be presented. A ROC graph is a technique for visualising, organising and selecting classifiers based on their performance. Given a classifier and an instance, there are four possible outcomes, i.e., true positive $(TP)$, false negative $(FN)$, true negative $(TN)$ and false positive $(FP)$ \cite{fawcett2006introduction}. Table \ref{tbl:img1} shows the results for AUC obtained for the different classifiers for the RGB color space. If a classifier yields a 1.0, then it is a perfect test. 0.9 to 0.99 is an excellent test, 0.8 to 0.89 is a good test, 0.7 to 0.79 is a fair test, 0.6 to 0.69 is a poor test, 0.5 to 0.59 is a failed test and below 0.5 the classifier is negatively correlated with the target.
+\subsubsection{Actual Necrosis Percentage}
+To calculate the actual percentage of necrosis of a given test image, the binary pixel labels were used. From Equation \ref{act},
+
+\begin{equation}\label{act}
+
+ Actual\%\,of\,Necrosis = \left(\frac{ number\, of\, pixels\, labeled\, necrotised}{Total\, number\, of\, pixels}\right)\,\times\,100
+\end{equation}
+
+\subsubsection{Accuracy per pixel}
+To choose the best performing classifier, basing on accuracy per pixel, results of AUC and predictive accuracy score with cross-validation were obtained. In this section the results for both methods will be presented. A ROC graph is a technique for visualising, organising and selecting classifiers based on their performance. Given a classifier and an instance, there are four possible outcomes, i.e., true positive $(TP)$, false negative $(FN)$, true negative $(TN)$ and false positive $(FP)$ \cite{fawcett2006introduction}. \\ \\Table \ref{tbl:img1} shows the results for AUC obtained for the different classifiers for the RGB color space. If a classifier yields a 1.0, then it is a perfect test. 0.9 to 0.99 is an excellent test, 0.8 to 0.89 is a good test, 0.7 to 0.79 is a fair test, 0.6 to 0.69 is a poor test, 0.5 to 0.59 is a failed test and below 0.5 the classifier is negatively correlated with the target. \\ \\With Predictive Accuracy Score, the accuracy of the test approximates how effective the algorithm is by showing the probability of the true value of the class label; summing it all up, it evaluates the overall effectiveness of the algorithm \cite{sokolova2006beyond}. The higher the probability, the higher the predictive accuracy score. Four sample images were used to determine the probabilities as shown in Table \ref{tbl:img11}.
+
 \begin{table}[t!]
 \renewcommand{\arraystretch}{1.3}
 \caption{AUC of classifiers for $RGB$ color space }
@@ -557,10 +560,6 @@ To choose the best performing classifier, results of AUC and accuracy were obtai
      \end{tabular}
     \label{tbl:img1}
 \end{table}
-
-\subsubsection{Predictive Accuracy Score}
-Classifiers were also assessed based on the predictive accuracy score with cross-validation. The accuracy of the test approximates how effective the algorithm is by showing the probability of the true value of the class label; summing it all up, it evaluates the overall effectiveness of the algorithm \cite{sokolova2006beyond}. The higher the probability, the higher the predictive accuracy score. Four sample images were used to determine the probabilities as shown in Table \ref{tbl:img11}.
-
 
 
 \begin{table}[t!]
@@ -584,18 +583,24 @@ Classifiers were also assessed based on the predictive accuracy score with cross
 \end{itemize}
 
 
-
-
-\subsubsection{Mean Absolute Error (MAE)} The (MAE) was used to measure how close predictions of the overall percentage of necrotisation of a root were to the actual percentage of necrotisation of the root. The \ac{MAE} estimated over $N$ is defined as is defined as;
+\subsubsection{Accuracy per root sample}
+Performance measures used to determine best performing classifier, basing on accuracy per root sample, were Mean Absolute Error (MAE) and $R^{2}$ Score, the Coefficient of Determination. In this section the results for both methods will be presented. The MAE was used to measure how close predictions of the overall percentage of necrotisation of a root were to the actual percentage of necrotisation of the root. The MAE estimated over $N$ is defined as; 
 
 \begin{equation}\label{eqn13}
     \text{MAE}(y, \hat{y}) = \frac{1}{N} \sum_{i=1}^{N}} \left| y_{i} - \hat{y}_{i} \right|.
 \end{equation}
 
-\noindent where $\hat{y}_{i}$ is the predicted value of the $i$-th sample and $y_{i}$ is the corresponding true value.
+where $\hat{y}_{i}$ is the predicted value of the $i$-th sample and $y_{i}$ is the corresponding true value.
 
-\noindent The results for (MAE) for the different classifiers are shown in Table \ref{tbl:mae}.
+The results for (MAE) for the different classifiers are shown in Table \ref{tbl:mae}. \\ \\The $R^{2}$ score, the coefficient of determination was calculated and this provided results on how well the overall percentage of necrotisation is predicted by the model. If $\hat{y}_{i}$ is the predicted value of the $i$-th sample and $y_{i}$ is the corresponding true value, then the score $R^{2}$ estimated over $N$ is defined as,
 
+\begin{equation}\label{eqn9}
+    R^2(y, \hat{y}) = 1 - \frac{\sum_{i=1}^{N} (y_{i} - \hat{y}_{i})^{2}}{\sum_{i=1}^N (y_{i} - \bar{y})^{2}}
+\end{equation}
+
+\noindent where $\bar{y} =  \frac{1}{N} \sum_{i=1}^{N} y_{i}$.
+
+\noindent The results for $R^{2}$ score for the different classifiers are shown in Table \ref{tbl:r2}.
 \begin{table}[t!]
 \renewcommand{\arraystretch}{1.3}
 \caption{Mean Absolute Error for the different classifiers }\label{tbl:mae}
@@ -613,20 +618,6 @@ Classifiers were also assessed based on the predictive accuracy score with cross
 
 \end{table}
 
-\noindent Naive Bayes classifier and Nearest Neighbors classifier had the lowest (MAE) of \emph{0.049} while the other classifiers had a slightly higher MAE. This meant that Naive Bayes classifier and Nearest Neighbors classifier were more reliable models compared to the other classifiers.
-
-\subsubsection{$R^{2}$ Score, the Coefficient of Determination}
-The $R^{2}$ score, the coefficient of determination was calculated and this provided results on how well the overall percentage of necrotisation is predicted by the model. If $\hat{y}_{i}$ is the predicted value of the $i$-th sample and $y_{i}$ is the corresponding true value, then the score $R^{2}$ estimated over $N$ is defined as,
-
-\begin{equation}\label{eqn9}
-    R^2(y, \hat{y}) = 1 - \frac{\sum_{i=1}^{N} (y_{i} - \hat{y}_{i})^{2}}{\sum_{i=1}^N (y_{i} - \bar{y})^{2}}
-\end{equation}
-
-\noindent where $\bar{y} =  \frac{1}{N} \sum_{i=1}^{N} y_{i}$.
-
-\noindent The results for $R^{2}$ score for the different classifiers are shown in Table \ref{tbl:r2} below.
-
-
 \begin{table}[Htbp]
 \renewcommand{\arraystretch}{1.3}
 \caption{$R^{2}$ score for the different classifiers }\label{tbl:r2}
@@ -634,58 +625,48 @@ The $R^{2}$ score, the coefficient of determination was calculated and this prov
     \begin{tabular}{|l|l|}
     \hline
       Classifier & $R^{2}$ score   \\ \hline
-      Naive Bayes &   0.69107  \\
+      Naive Bayes &   0.691  \\
       \hline
-      Linear SVM &  0.60568 \\
+      Linear SVM &  0.605 \\
       \hline
-      Decision Tree & 0.68858   \\
+      Decision Tree & 0.688   \\
       \hline
-      Nearest Neighbors &  0.78955  \\
+      Nearest Neighbors &  0.789  \\
       \hline
-      Random Forest & 0.66258   \\    \hline
+      Random Forest & 0.662   \\    \hline
     \end{tabular}
 
 \end{table}
 
-
-\noindent Based on the results, comparing the classifiers used, the Nearest Neighbors classifier had the highest result of the {$R^{2}$ score of \emph{0.789}. This means that \emph{79\% }of the total variation in Actual Percentage Necrosis is determined by the linear relationship between Nearest Neighbors Percentage Necrosis and the Actual Percentage Necrosis. Because of the highest result of the {$R^{2}$ score compared to other classifiers, Nearest Neighbors classifier proved to be the more reliable the model.
-
-\subsubsection{Accuracy per Root Sample}
-The score of necrosis that was visually assigned by an expert from Namulonge Crops resources Research Institute, the predicted score of necrosis and the actual score of necrosis for the sample images was compared. The performance measure used was Linear least squares fitting and the goal was to ascertain the relationship between different pairs of variables. And these were:
+\noindent Naive Bayes classifier and Nearest Neighbors classifier had the lowest (MAE) of \emph{0.049} while the other classifiers had a slightly higher MAE. This meant that Naive Bayes classifier and Nearest Neighbors classifier were more reliable models compared to the other classifiers. By comparing the classifiers used, the Nearest Neighbors classifier had the highest result of the {$R^{2}$ score of \emph{0.789}. This means that \emph{79\% }of the total variation in Actual Percentage Necrosis is determined by the linear relationship between Nearest Neighbors Percentage Necrosis and the Actual Percentage Necrosis. Because of the highest result of the {$R^{2}$ score compared to other classifiers, Nearest Neighbors classifier proved to be the more reliable the model.\\ \\The score of necrosis that was visually assigned by an expert from Namulonge Crops resources Research Institute, the predicted score of necrosis and the actual score of necrosis for the sample images was compared. The performance measure used was Linear least squares fitting and the goal was to ascertain the relationship between different pairs of these variables. And these were:
 \begin{itemize}
   \item Surveyor1 and 2 Score and Predicted necrosis Percentage.
   \item Actual necrosis Percentage and Predicted necrosis Percentage.
   \item Actual necrosis Percentage and Surveyor1 \& Surveyor2 Score.
 \end{itemize}
 
-\subsubsection{Actual Necrosis Percentage}
-To calculate the actual percentage of necrosis of a given test image, the binary pixel labels were used. From Equation \ref{act},
 
-\begin{equation}\label{act}
-
-     Actual\%\,of\,Necrosis = \left(\frac{ number\, of\, pixels\, labeled\, necrotised}{Total\, number\, of\, pixels}\right)\,\times\,100
-\end{equation}
 
 Linear least squares fitting graphs were plotted as shown in Figures \ref{fig:Relatio1}, \ref{fig:Relatio2} and \ref{fig:Relatio3}.
 
 \begin{figure}[t!]
 \centering
 \includegraphics[scale=0.25]{images/Suveyor_predicted.jpg}
-\caption{Surveyor Score and Predicted necrosis Percentage}
+\caption{Surveyor score and predicted necrosis percentage}
 \label{fig:Relatio1}
 \end{figure}
 
 \begin{figure}[t!]
 \centering
 \includegraphics[scale=0.25]{images/Actual_Predicted.jpg}
-\caption{Actual necrosis Percentage and Predicted necrosis Percentage}
+\caption{Actual necrosis percentage and predicted necrosis percentage}
 \label{fig:Relatio2}
 \end{figure}
 
 \begin{figure}[t!]
 \centering
 \includegraphics[scale=0.25]{images/Actual_surveyor.jpg}
-\caption{ Actual necrosis Percentage and Surveyor Score }
+\caption{ Actual necrosis percentage and surveyor score }
 \label{fig:Relatio3}
 \end{figure}
 

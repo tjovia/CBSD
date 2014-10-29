@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.9)  28 OCT 2014 15:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.7.9)  29 OCT 2014 10:34
 entering extended mode
 **umicita2014.tex
 (C:\Users\Jovia\Documents\GitHub\CBSD\umicita2014\umicita2014.tex
@@ -223,39 +223,100 @@ File: images/cassava1.jpg Graphic file (type jpg)
 Package pdftex.def Info: images/cassava1.jpg used on input line 460.
 (pdftex.def)             Requested size: 151.67012pt x 98.73462pt.
 
-<images/confusionmatrix.jpg, id=12, 617.30624pt x 617.30624pt>
-File: images/confusionmatrix.jpg Graphic file (type jpg)
 
-<use images/confusionmatrix.jpg>
-Package pdftex.def Info: images/confusionmatrix.jpg used on input line 475.
-(pdftex.def)             Requested size: 123.45906pt x 123.45906pt.
+LaTeX Warning: Reference `fig:CONM' on page 2 undefined on input line 469.
 
 ! Too many }'s.
-l.496 \end{table}}
+l.488 \end{table}}
                   
 ? 
 
-Underfull \hbox (badness 3138) in paragraph at lines 506--507
+Underfull \hbox (badness 3138) in paragraph at lines 498--499
 []\OT1/ptm/m/n/10 Off-diagonal row el-e-ments rep-re-sent Sur-
  []
 
-[2 <C:/Users/Jovia/Documents/GitHub/CBSD/umicita2014/images/cassava1.jpg> <C:/U
-sers/Jovia/Documents/GitHub/CBSD/umicita2014/images/confusionmatrix.jpg>]
-<images/cropped.jpg, id=18, 297.11pt x 277.035pt>
+<images/cropped.jpg, id=12, 297.11pt x 277.035pt>
 File: images/cropped.jpg Graphic file (type jpg)
  <use images/cropped.jpg>
-Package pdftex.def Info: images/cropped.jpg used on input line 522.
+Package pdftex.def Info: images/cropped.jpg used on input line 514.
 (pdftex.def)             Requested size: 75.91573pt x 70.78459pt.
 
-<images/croppedbinary.jpg, id=19, 297.11pt x 277.035pt>
+<images/croppedbinary.jpg, id=13, 297.11pt x 277.035pt>
 File: images/croppedbinary.jpg Graphic file (type jpg)
 
 <use images/croppedbinary.jpg>
-Package pdftex.def Info: images/croppedbinary.jpg used on input line 528.
+Package pdftex.def Info: images/croppedbinary.jpg used on input line 520.
 (pdftex.def)             Requested size: 75.91573pt x 70.78459pt.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 546.
+ [2 <C:/Users/Jovia/Documents/GitHub/CBSD/umicita2014/images/cassava1.jpg> <C:/
+Users/Jovia/Documents/GitHub/CBSD/umicita2014/images/cropped.jpg> <C:/Users/Jov
+ia/Documents/GitHub/CBSD/umicita2014/images/croppedbinary.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
+ []
+
+
+Underfull \hbox (badness 1762) in paragraph at lines 532--533
+\OT1/ptm/m/n/10 how good the clas-si-fiers per-formed when dis-tin-guish-ing
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.540 
+      
+? 
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.540 
+      
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.541  Actual\%\,of\,Necrosis = \left
+                                     (\frac{ number\, of\, pixels\, labeled\...
+
+? 
+! You can't use `\eqno' in math mode.
+\endequation ->\eqno 
+                     \hbox {\@eqnnum }$$\@ignoretrue 
+l.542 \end{equation}
+                    
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.542 \end{equation}
+                    
+? 
+
+Overfull \hbox (3.30875pt too wide) in paragraph at lines 541--543
+[]\OT1/ptm/m/n/10 Actual%ofNecrosis = $[]  \OMS/cmsy/m/n/10 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+
+Underfull \hbox (badness 2460) in paragraph at lines 545--546
+\OT1/ptm/m/n/10 Table II[] shows the re-sults for AUC ob-tained for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 545--546
+
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 545--546
+\OT1/ptm/m/n/10 With Pre-dic-tive Ac-cu-racy Score, the ac-cu-racy of the
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 549.
 
 ! LaTeX Error: \begin{document} ended by \end{itemize}.
 
@@ -263,100 +324,67 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.584 \end{itemize}
+l.583 \end{itemize}
                    
 ? 
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.584 \end{itemize}
+l.583 \end{itemize}
                    
 ? 
 ! Undefined control sequence.
-l.589 ...age of necrotisation of the root. The \ac
-                                                  {MAE} estimated over $N$ i...
-
-? 
-! Undefined control sequence.
-l.592     \text
+l.590     \text
                {MAE}(y, \hat{y}) = \frac{1}{N} \sum_{i=1}^{N}} \left| y_{i} ...
 
 ? 
 ! Extra }, or forgotten $.
-l.592 ...y, \hat{y}) = \frac{1}{N} \sum_{i=1}^{N}}
+l.590 ...y, \hat{y}) = \frac{1}{N} \sum_{i=1}^{N}}
                                                    \left| y_{i} - \hat{y}_{i...
 
 ? 
-[3 <C:/Users/Jovia/Documents/GitHub/CBSD/umicita2014/images/cropped.jpg> <C:/Us
-ers/Jovia/Documents/GitHub/CBSD/umicita2014/images/croppedbinary.jpg>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.665 
-      
-? 
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.665 
-      
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.666      Actual\%\,of\,Necrosis = \left
-                                         (\frac{ number\, of\, pixels\, labe...
 
-? 
-! You can't use `\eqno' in math mode.
-\endequation ->\eqno 
-                     \hbox {\@eqnnum }$$\@ignoretrue 
-l.667 \end{equation}
-                    
-? 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.667 \end{equation}
-                    
-? 
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
 
-Overfull \hbox (3.30875pt too wide) in paragraph at lines 666--668
-[]\OT1/ptm/m/n/10 Actual%ofNecrosis = $[]  \OMS/cmsy/m/n/10 
  []
 
-<images/Suveyor_predicted.jpg, id=28, 818.05624pt x 617.30624pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--643
+
+ []
+
+[3] <images/Suveyor_predicted.jpg, id=27, 818.05624pt x 617.30624pt>
 File: images/Suveyor_predicted.jpg Graphic file (type jpg)
 
 <use images/Suveyor_predicted.jpg>
-Package pdftex.def Info: images/Suveyor_predicted.jpg used on input line 673.
+Package pdftex.def Info: images/Suveyor_predicted.jpg used on input line 654.
 (pdftex.def)             Requested size: 204.51355pt x 154.32617pt.
 
-<images/Actual_Predicted.jpg, id=29, 818.05624pt x 617.30624pt>
+<images/Actual_Predicted.jpg, id=28, 818.05624pt x 617.30624pt>
 File: images/Actual_Predicted.jpg Graphic file (type jpg)
 
 <use images/Actual_Predicted.jpg>
-Package pdftex.def Info: images/Actual_Predicted.jpg used on input line 680.
+Package pdftex.def Info: images/Actual_Predicted.jpg used on input line 661.
 (pdftex.def)             Requested size: 204.51355pt x 154.32617pt.
 
-<images/Actual_surveyor.jpg, id=30, 818.05624pt x 617.30624pt>
+<images/Actual_surveyor.jpg, id=29, 818.05624pt x 617.30624pt>
 File: images/Actual_surveyor.jpg Graphic file (type jpg)
 
 <use images/Actual_surveyor.jpg>
-Package pdftex.def Info: images/Actual_surveyor.jpg used on input line 687.
+Package pdftex.def Info: images/Actual_surveyor.jpg used on input line 668.
 (pdftex.def)             Requested size: 204.51355pt x 154.32617pt.
 
-Underfull \hbox (badness 1590) in paragraph at lines 800--802
+Underfull \hbox (badness 1590) in paragraph at lines 781--783
 \OT1/ptm/m/n/10 been shown how dif-fer-ent clas-si-fi-ca-tion tech-niques have
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 800--802
+Underfull \hbox (badness 10000) in paragraph at lines 781--783
 
  []
 
 
-Underfull \hbox (badness 1442) in paragraph at lines 800--802
+Underfull \hbox (badness 1442) in paragraph at lines 781--783
 \OT1/ptm/m/n/10 brown streak dis-ease by pro-vid-ing real-time in-for-ma-tion
  []
 
@@ -378,18 +406,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[5] (C:\Users\Jovia\Documents\GitHub\CBSD\umicita2014\umicita2014.aux) )
+[5] (C:\Users\Jovia\Documents\GitHub\CBSD\umicita2014\umicita2014.aux)
+
+LaTeX Warning: There were undefined references.
+
+ )
 (\end occurred inside a group at level 2)
 
-### simple group (level 2) entered at line 800 ({)
-### simple group (level 1) entered at line 651 ({)
+### simple group (level 2) entered at line 781 ({)
+### simple group (level 1) entered at line 641 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 1908 strings out of 493921
- 30269 string characters out of 3147283
- 92184 words of memory out of 3000000
- 5216 multiletter control sequences out of 15000+200000
- 39680 words of font info for 75 fonts, out of 3000000 for 9000
+ 1904 strings out of 493921
+ 30133 string characters out of 3147283
+ 96176 words of memory out of 3000000
+ 5212 multiletter control sequences out of 15000+200000
+ 40787 words of font info for 76 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  27i,9n,21p,2851b,261s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C
@@ -405,9 +437,9 @@ rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on umicita2014.pdf (5 pages, 571945 bytes).
+Output written on umicita2014.pdf (5 pages, 546630 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 81 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
